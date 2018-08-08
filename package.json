@@ -1,0 +1,22 @@
+{
+  "name": "alena-pakhomova.github.io",
+  "version": "1.0.0",
+  "description": "alena-pakhomova.github.io",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "browser-sync start --server --files \"css/*.css, *.html, pages/*.html\" --browsers \"Chrome\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alena-pakhomova/alena-pakhomova.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alena-pakhomova/alena-pakhomova.github.io/issues"
+  },
+  "homepage": "https://github.com/alena-pakhomova/alena-pakhomova.github.io#readme",
+  "devDependencies": {
+    "browser-sync": "^2.24.6"
+  }
+}
