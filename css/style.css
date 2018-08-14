@@ -1,0 +1,95 @@
+ @font-face {
+    font-family: "Vanity-Bold"; 
+    src: url(fonts/Vanity-Bold.ttf); 
+   }
+
+ @font-face {
+    font-family: "Vanity-BoldWide"; 
+    src: url(fonts/Vanity-BoldWide.ttf); 
+   }
+
+* {
+    padding: 0;
+    margin: 0;
+    
+}
+
+body {
+    font-family: "Verdana", "Geneva", "DejaVu Sans", sans-serif;
+    font-size: 18px;
+    background: #0A0235;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr repeat(12, minmax(auto, 122px)) 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    grid-template-rows: repeat(4, auto);
+}
+
+header {
+      grid-column: 2/14;
+    grid-row: 1/2;
+   
+}
+
+main {
+    grid-column: 2/14;
+    grid-row: 2/3;
+    display: flex;
+     flex-direction: row;
+    justify-content: center;
+}
+
+.header_menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    margin-top: 63px;
+    margin-bottom: 63px;
+    
+}
+
+.header_menu_a {
+    text-decoration: none;
+   color: #F9C9C5;
+    font-size: 23px;
+    letter-spacing: 3px;
+    }
+.header_menu_a:hover .menu_burger::before {
+    top: -12px;
+}
+
+.header_menu_a:hover .menu_burger::after {
+    bottom: -12px;
+}
+
+.menu_burger {
+    display: inline-block;
+    background: #F9C9C5;
+    width: 50px;
+    height: 5px;
+    position: relative;
+    vertical-align: middle;
+    margin: -4px 12px 0 12px;
+
+}
+.menu_burger::before,
+.menu_burger::after {
+    content: "";
+    background: #F9C9C5;
+    width: 50px;
+    height: 5px;
+} 
+
+.menu_burger::before {
+    position: absolute;
+    top: -9px;
+}
+.menu_burger::after {
+    position: absolute;
+    bottom: -9px;
+}
+
