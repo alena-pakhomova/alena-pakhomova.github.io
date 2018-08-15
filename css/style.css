@@ -29,7 +29,7 @@ body {
 }
 
 header {
-      grid-column: 2/14;
+      grid-column: 4/12;
     grid-row: 1/2;
    
 }
@@ -40,33 +40,40 @@ main {
     display: flex;
      flex-direction: row;
     justify-content: center;
+    align-items: flex-start;
 }
+
+/*--------------------start header----------------------*/
+
+
 
 .header_menu {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    list-style: none;
-    margin-top: 63px;
-    margin-bottom: 63px;
+    align-items: center;
+    height: 160px;
+    position: relative;
     
-}
+} 
 
-.header_menu_a {
-    text-decoration: none;
-   color: #F9C9C5;
+.nav_burger {
+      color: #F9C9C5;
     font-size: 23px;
     letter-spacing: 3px;
+    cursor: pointer;
+    z-index: 100;
     }
-.header_menu_a:hover .menu_burger::before {
+
+.nav_burger:hover .menu__burger::before {
     top: -12px;
 }
 
-.header_menu_a:hover .menu_burger::after {
+.nav_burger:hover .menu__burger::after {
     bottom: -12px;
 }
 
-.menu_burger {
+.menu__burger {
     display: inline-block;
     background: #F9C9C5;
     width: 50px;
@@ -76,20 +83,74 @@ main {
     margin: -4px 12px 0 12px;
 
 }
-.menu_burger::before,
-.menu_burger::after {
+.menu__burger::before,
+.menu__burger::after {
     content: "";
     background: #F9C9C5;
     width: 50px;
     height: 5px;
 } 
 
-.menu_burger::before {
+.menu__burger::before {
     position: absolute;
     top: -9px;
 }
-.menu_burger::after {
+.menu__burger::after {
     position: absolute;
     bottom: -9px;
 }
+.nav {
+    width: 100%;
+    text-align: right;
+       position: absolute;
+    display: none;
+}
+
+.nav__item {
+    text-decoration: none;
+    color: #F9C9C5;
+    font-size: 23px;
+    }
+
+.nav__item:last-child {
+    margin-left: 145px;
+}
+.nav__item:nth-child(2) {
+    margin-left: 400px;
+}
+
+.nav_burger__checkbox {
+  display: none;
+}
+
+
+.nav_burger__checkbox:checked + .nav_burger {
+      color: transparent;
+  font-size: 0;
+    width: 91px;
+    height: 91px;
+    background-image: url("../img/logo.svg");
+    background-size: contain;
+    }
+
+.nav_burger__checkbox:checked + .nav_burger .menu__burger {
+    display: none;
+}
+
+
+
+.nav_burger__checkbox:checked ~ .nav {
+  display: block;
+}
+.svg_av {
+    margin-top: 50px;
+}
+
+
+
+
+
+
+/*--------------------end header----------------------*/
+
 
