@@ -32,12 +32,11 @@
      display: grid;
      grid-template-columns: 1fr repeat(12, minmax(auto, 122px)) 1fr;
      grid-column-gap: 16px;
-     grid-row-gap: 16px;
-     grid-template-rows: repeat(2, auto);
+grid-template-rows: repeat(2, auto);
  }
 
  .header_main {
-     grid-column: 4/12;
+     grid-column: 2/14;
      grid-row: 1/2;
 
  }
@@ -59,12 +58,12 @@
  }
 
  .header_work {
-     grid-column: 4/12;
+     grid-column: 2/14;
      grid-row: 1/2;
 
  }
 
- .name_paje {
+ .name_page {
      grid-column: 2/14;
      grid-row: 2/3;
  }
@@ -159,29 +158,36 @@
 
  .nav {
      width: 100%;
-     text-align: right;
+     text-align: left;
      position: absolute;
      display: none;
 
+
  }
+
+.nav_menu {
+        display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+    
+}
 
  .nav__item {
      text-decoration: none;
      color: #F9C9C5;
      font-size: 20px;
+      width: 100px;
+        
+     display: block;
 
  }
 
-
- .nav__item:not(:first-child) {
-     margin-left: 145px;
- }
-
- .nav__item:nth-child(2) {
-     color: transparent;
-     font-size: 0;
-     margin-left: 250px;
- }
+.nav__item:nth-child(3) {
+    width: 85px;
+     height: 85px;
+}
+ 
 
 
  .nav_burger__checkbox {
@@ -208,19 +214,44 @@
      display: block;
  }
 
+/*--------------------header work------------*/
+
+.nav_work {
+    display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+     height: 120px;
+    
+}
+
+.nav__work {
+    text-decoration: none;
+     color: #F9C9C5;
+     font-size: 20px;
+    display: block;
+    width: 100px;
+       }
+
+.nav__work:nth-child(3) {
+     width: 85px;
+     height: 85px;
+    background-image: url("../img/logo.svg");
+     background-size: contain;
+}
 
 
  /*--------------------end header----------------------*/
 
  .svg_av {
      margin-top: 50px;
-     width: 80%;
+     width: 75%;
      height: auto;
  }
 
  /*--------------------start work page--------------------------*/
 
- .name_paje {
+ .name_page {
      display: flex;
      flex-direction: row;
      justify-content: center;
@@ -302,7 +333,9 @@
  }
 
 
- .name_paje h1 {
+
+
+ .name_page h1 {
      font-size: 232px;
      font-family: "Vanity-Bold";
      color: #F9C9C5;
@@ -315,6 +348,7 @@
 .main_work p {
     color: #0a0235;
     margin-bottom: 60px;
+    line-height: 1.8;
 }
 .main__h {
     margin-top: 200px;
@@ -425,4 +459,18 @@
 .work_old_site {
     overflow: hidden;
 }
+/*.work_old_site.scroll_blue_pink::before {
+    transform: translateX(-50%) rotateX(180deg);
+}*/
+
  /*--------------------end work page--------------------------*/
+
+/*----------------------start about page-----------------------------*/
+
+.wrap_ingress_about {
+    margin-right: 40px;
+}
+
+
+
+/*----------------------end about page-----------------------------*/
