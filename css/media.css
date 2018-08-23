@@ -1,0 +1,38 @@
+@media all and (max-width:800px) {
+    
+     
+    .header_menu {
+        min-height: 260px;
+        justify-content: flex-start;
+    }
+    
+    .nav_burger {
+        margin: 45px 10px 5px 10px;
+    }
+    
+    .nav_menu {
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+    }
+    
+    
+    .nav__item:nth-child(3) {
+        order: -1;
+    }
+    
+    
+    .nav__item {
+        margin: 15px;
+    }
+    
+    .nav {
+      
+          top: 0px;
+    }
+    
+    .nav_menu {
+        height: 100%;
+      
+    }
+}
