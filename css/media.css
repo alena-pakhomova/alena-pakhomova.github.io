@@ -77,9 +77,9 @@
     .name_page h1 {
         font-size: 90px;
     }
-    
-    
-    
+
+
+
 
     .wrap_ingress {
         flex-wrap: wrap;
@@ -118,43 +118,48 @@
         font-size: 55px;
         margin-bottom: 40px;
     }
-    
+
     .main__h {
         margin-top: 100px;
     }
-    
+
     .main_work p,
-.main_contact p {
-        margin-bottom: 40px;}
+    .main_contact p {
+        margin-bottom: 40px;
+    }
 
     .old_site_img_wrap {
         justify-content: center;
         margin-bottom: 100px;
     }
 
+    .wrap_ingress_column_one {
+        max-width: 731px;
+    }
+
 }
 
 /*-------------------------end work-------------------------*/
 
-
 /*-------------------------start about-------------------------*/
+
 @media all and (max-width:800px) {
 
     .wrap_ingress_about_img .wrap_ingress_about__p {
         margin-right: 5px;
-     margin-bottom: 5px;
+        margin-bottom: 5px;
     }
     .wrap_ingress_about_img {
         margin-bottom: 15px;
     }
     .wrap_ingress_about .wrap_ingress__about {
-        
+
         margin-bottom: 40px;
     }
-    
-}
-/*-------------------------end about-------------------------*/
 
+}
+
+/*-------------------------end about-------------------------*/
 
 /*-------------------------start contact-------------------------*/
 
