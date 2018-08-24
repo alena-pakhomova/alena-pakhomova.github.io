@@ -72,14 +72,18 @@
     }
 
     .wrapper_work {
-        grid-template-rows: auto minmax(450px, auto) repeat(3, auto);
+        grid-template-rows: auto minmax(400px, auto) repeat(3, auto);
     }
     .name_page h1 {
         font-size: 90px;
     }
+    
+    
+    
 
     .wrap_ingress {
         flex-wrap: wrap;
+        margin-bottom: 100px;
     }
 
     .scroll_blue_pink::before,
@@ -112,10 +116,20 @@
     .main_work h2,
     .work_old_site h2 {
         font-size: 55px;
+        margin-bottom: 40px;
     }
+    
+    .main__h {
+        margin-top: 100px;
+    }
+    
+    .main_work p,
+.main_contact p {
+        margin-bottom: 40px;}
 
     .old_site_img_wrap {
         justify-content: center;
+        margin-bottom: 100px;
     }
 
 }
@@ -132,6 +146,10 @@
     }
     .wrap_ingress_about_img {
         margin-bottom: 15px;
+    }
+    .wrap_ingress_about .wrap_ingress__about {
+        
+        margin-bottom: 40px;
     }
     
 }
