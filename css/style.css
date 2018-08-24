@@ -73,8 +73,8 @@
      grid-row: 3/4;
      display: grid;
      grid-template-columns: 1fr repeat(12, minmax(auto, 122px)) 1fr;
-     grid-column-gap: 16px;
-     grid-template-rows: repeat(4, auto);
+         grid-template-rows: repeat(4, auto);
+        grid-column-gap: 16px;
  }
 
 
@@ -243,14 +243,18 @@ transition: width 0.5s ease-in-out, opacity 0.3s ease-in-out;
      height: 85px;
      background-image: url("../img/logo.svg");
      background-size: contain;
-    
+     transition: transform 0.4s ease-in-out;
 }
 
 .nav_burger__checkbox:checked + .nav_burger:hover {
      transform: rotate(360deg);
     transition: transform 0.4s ease-in-out;
 }
-
+.nav__work:nth-child(3):active,
+.nav_burger__checkbox:checked + .nav_burger:active {
+     opacity: 0.5;
+    transition: opacity 0.1s ease-in-out;
+}
 
  .nav_burger__checkbox:checked + .nav_burger .menu__burger {
      display: none;
