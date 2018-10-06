@@ -4,7 +4,7 @@
   "description": "alena-pakhomova.github.io",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "browser-sync start --server --files \"css/*.css, *.html, pages/*.html\" --browsers \"Chrome\""
+    "start": "browser-sync start --server --files \"css/*.css, *.html, pages/*.html, js/*.js\" --browsers \"Chrome\""
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,8 @@
   "homepage": "https://github.com/alena-pakhomova/alena-pakhomova.github.io#readme",
   "devDependencies": {
     "browser-sync": "^2.24.6"
+  },
+  "dependencies": {
+    "photoswipe": "^4.1.2"
   }
 }

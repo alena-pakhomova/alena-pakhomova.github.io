@@ -5,8 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <base href="../">
+    <!-- Custom styles -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
+    <!-- /Custom styles -->
+    <!-- Vendor styles -->
+    <link rel="stylesheet" href="../node_modules/photoswipe/dist/photoswipe.css">
+    <link rel="stylesheet" href="../node_modules/photoswipe/dist/default-skin/default-skin.css">
+    <!-- /Vendor styles -->
     <link rel="shortcut icon" href="img/logo title.png" type="image/x-icon">
     <title>Work - Pakhomova AV</title>
 </head>
@@ -57,27 +63,105 @@
             <h2>THE OLD VERSION <br>OF SITE</h2>
             <hr>
             <div class="old_site_img_wrap">
-                <a class="old_site__wrap" href="img/01.png"> <img class="old_site__img" src="img/01.png"></a>
-                <a class="old_site__wrap" href="img/02.png"> <img class="old_site__img" src="img/02.png"></a>
+                <a class="old_site__wrap" href="img/01.png"><img class="old_site__img" src="img/01.png"></a>
+                <a class="old_site__wrap" href="img/02.png"><img class="old_site__img" src="img/02.png"></a>
                 <a class="old_site__wrap" href="img/03.png"><img class="old_site__img" src="img/03.png"></a>
                 <a class="old_site__wrap" href="img/04.png"><img class="old_site__img" src="img/04.png"></a>
-                <a class="old_site__wrap" href="img/05.png"> <img class="old_site__img" src="img/05.png"></a>
+                <a class="old_site__wrap" href="img/05.png"><img class="old_site__img" src="img/05.png"></a>
                 <a class="old_site__wrap" href="img/06.png"><img class="old_site__img" src="img/06.png"></a>
                 <a class="old_site__wrap" href="img/07.png"><img class="old_site__img" src="img/07.png"></a>
                 <a class="old_site__wrap" href="img/08.png"><img class="old_site__img" src="img/08.png"></a>
                 <a class="old_site__wrap" href="img/09.png"><img class="old_site__img" src="img/09.png"></a>
                 <a class="old_site__wrap" href="img/10.png"><img class="old_site__img" src="img/10.png"></a>
                 <a class="old_site__wrap" href="img/11.png"><img class="old_site__img" src="img/11.png"></a>
-                <a class="old_site__wrap" href="img/12.png"> <img class="old_site__img" src="img/12.png"></a>
+                <a class="old_site__wrap" href="img/12.png"><img class="old_site__img" src="img/12.png"></a>
                 <a class="old_site__wrap" href="img/13.png"><img class="old_site__img" src="img/13.png"></a>
                 <a class="old_site__wrap" href="img/14.png"><img class="old_site__img" src="img/14.png"></a>
                 <a class="old_site__wrap" href="img/15.png"><img class="old_site__img" src="img/15.png"></a>
-                <a class="old_site__wrap" href="img/16.png"> <img class="old_site__img" src="img/16.png"></a>
+                <a class="old_site__wrap" href="img/16.png"><img class="old_site__img" src="img/16.png"></a>
                 <a class="old_site__wrap" href="img/17.png"><img class="old_site__img" src="img/17.png"></a>
                 <a class="old_site__wrap" href="img/18.png"><img class="old_site__img" src="img/18.png"></a>
             </div>
         </section>
     </div>
+
+    <!-- Photoswipe gallery -->
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    
+        <!-- Background of PhotoSwipe. 
+             It's a separate element as animating opacity is faster than rgba(). -->
+        <div class="pswp__bg"></div>
+    
+        <!-- Slides wrapper with overflow:hidden. -->
+        <div class="pswp__scroll-wrap">
+    
+            <!-- Container that holds slides. 
+                PhotoSwipe keeps only 3 of them in the DOM to save memory.
+                Don't modify these 3 pswp__item elements, data is added later on. -->
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+    
+            <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+            <div class="pswp__ui pswp__ui--hidden">
+    
+                <div class="pswp__top-bar">
+    
+                    <!--  Controls are self-explanatory. Order can be changed. -->
+    
+                    <div class="pswp__counter"></div>
+    
+                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+    
+                    <button class="pswp__button pswp__button--share" title="Share"></button>
+    
+                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+    
+                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+    
+                    <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                    <!-- element will get class pswp__preloader--active when preloader is running -->
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div>
+    
+                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                </button>
+    
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                </button>
+    
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+    
+            </div>
+    
+        </div>
+    
+    </div>
+    <!-- /Photoswipe gallery -->
+
+    <!-- Custom scripts -->
+    <script src="../js/work.js"></script>
+    <!-- /Custom scripts -->
+    <!-- Vendor scripts -->
+    <script src="../node_modules/photoswipe/dist/photoswipe.min.js"></script>
+    <script src="../node_modules/photoswipe/dist/photoswipe-ui-default.min.js"></script>
+    <!-- /Vendor scripts -->
+
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
         (function (d, w, c) {
