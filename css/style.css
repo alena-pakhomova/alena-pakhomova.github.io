@@ -241,7 +241,7 @@ transition: width 0.5s ease-in-out, opacity 0.3s ease-in-out;
      font-size: 0;
      width: 85px;
      height: 85px;
-     background-image: url("../img/logo.svg");
+     background-image: url("../assets/icons/logo.svg");
      background-size: contain;
      transition: transform 0.4s ease-in-out;
 }
@@ -304,7 +304,7 @@ transition: width 0.5s ease-in-out, opacity 0.3s ease-in-out;
  .nav__work:nth-child(3) {
      width: 85px;
      height: 85px;
-     background-image: url("../img/logo.svg");
+     background-image: url("../assets/icons/logo.svg");
      background-size: contain;
  }
 
@@ -484,7 +484,7 @@ transition: width 0.5s ease-in-out, opacity 0.3s ease-in-out;
  }
 
  .main_work .visit__site {
-     background-image: url(../img/right-arrow-angle.svg);
+     background-image: url(../assets/icons/right-arrow-angle.svg);
      background-repeat: no-repeat;
      width: 26px;
      height: 26px;
@@ -602,7 +602,7 @@ transition: width 0.5s ease-in-out, opacity 0.3s ease-in-out;
      left: 0;
      transition: 0.48s all ease-in-out;
      background-color: #f9c9c5;
-     background-image: url(../img/plus-zoom-or-search-symbol-of-interface.svg);
+     background-image: url(../assets/icons/plus-zoom-or-search-symbol-of-interface.svg);
      width: 251px;
      height: 141px;
      background-repeat: no-repeat;
