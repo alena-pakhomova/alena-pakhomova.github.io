@@ -4,7 +4,8 @@
   "description": "alena-pakhomova.github.io",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "browser-sync start --server --files \"css/*.css, *.html, pages/*.html, js/*.js\" --browsers \"Chrome\""
+    "start": "browser-sync start --server --files \"css/*.css, *.html, pages/*.html, js/*.js\" --browsers \"Chrome\"",
+    "gulp": "./node_modules/.bin/gulp"
   },
   "repository": {
     "type": "git",
@@ -17,7 +18,11 @@
   },
   "homepage": "https://github.com/alena-pakhomova/alena-pakhomova.github.io#readme",
   "devDependencies": {
-    "browser-sync": "^2.24.6"
+    "browser-sync": "^2.24.6",
+    "del": "^3.0.0",
+    "gulp": "^4.0.0",
+    "gulp-debug": "^4.0.0",
+    "gulp-imagemin": "^4.1.0"
   },
   "dependencies": {
     "photoswipe": "^4.1.2"
