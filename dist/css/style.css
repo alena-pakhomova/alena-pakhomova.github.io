@@ -1,3 +1,178 @@
+/*-----------start index page----------------------------*/
+
+@media all and (max-width:800px) {
+
+
+    .header_menu {
+        min-height: 260px;
+        justify-content: flex-start;
+    }
+
+    .nav_burger {
+        margin: 45px 10px 5px 10px;
+    }
+
+    .nav_menu {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .nav__item:nth-child(3) {
+        order: -1;
+    }
+
+
+    .nav__item {
+        margin: 15px;
+    }
+
+    .nav {
+
+        top: 0px;
+    }
+
+    .nav_menu {
+        height: 100%;
+
+    }
+    .svg_av {
+        width: 100%;
+    }
+    .nav_burger__checkbox:checked ~ .main_main {
+        display: none;
+    }
+
+}
+
+/*-------------------------start work-------------------------*/
+
+@media all and (max-width:800px) {
+
+    .nav_work {
+        margin-top: 45px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+    }
+
+    .nav__work {
+        margin: 15px;
+    }
+
+
+    .nav__work:nth-child(3) {
+        order: -1;
+        background-repeat: no-repeat;
+        width: 85px;
+        height: 85px;
+        margin: 0;
+    }
+
+    .wrapper_work {
+        grid-template-rows: auto minmax(400px, auto) repeat(3, auto);
+    }
+    .name_page h1 {
+        font-size: 90px;
+    }
+
+
+
+
+    .wrap_ingress {
+        flex-wrap: wrap;
+        margin-bottom: 100px;
+    }
+
+    .scroll_blue_pink::before,
+    .scroll_pink_blue::before {
+        width: 85px;
+        height: 85px;
+        bottom: -42px;
+        font-size: 35px;
+        padding-top: 9px;
+    }
+
+    .scroll_blue_pink::after,
+    .scroll_pink_blue::after {
+        bottom: -36px;
+        font-size: 35px;
+    }
+
+
+
+    .scroll_blue_pink--end::before,
+    .scroll_pink_blue--end::before {
+        width: 85px;
+        height: 85px;
+        font-size: 35px;
+        padding-top: 47px;
+        bottom: -44px;
+
+    }
+
+    .main_work h2,
+    .work_old_site h2 {
+        font-size: 55px;
+        margin-bottom: 40px;
+    }
+
+    .main__h {
+        margin-top: 100px;
+    }
+
+    .main_work p,
+    .main_contact p {
+        margin-bottom: 40px;
+    }
+
+    .old_site_img_wrap {
+        justify-content: center;
+        margin-bottom: 100px;
+    }
+
+    .wrap_ingress_column_one {
+        max-width: 731px;
+    }
+
+}
+
+/*-------------------------end work-------------------------*/
+
+/*-------------------------start about-------------------------*/
+
+@media all and (max-width:800px) {
+
+    .wrap_ingress_about_img .wrap_ingress_about__p {
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+    .wrap_ingress_about_img {
+        margin-bottom: 15px;
+    }
+    .wrap_ingress_about .wrap_ingress__about {
+
+        margin-bottom: 40px;
+    }
+
+}
+
+/*-------------------------end about-------------------------*/
+
+/*-------------------------start contact-------------------------*/
+
+@media all and (max-width:800px) {
+    .main_contact {
+        padding: 150px 5px 150px 5px;
+    }
+
+
+}
+
+/*-------------------------end contact-------------------------*/
+
  @font-face {
      font-family: "Vanity-Bold";
      src: url(../../fonts/Vanity-Bold.ttf);
