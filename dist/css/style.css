@@ -175,17 +175,17 @@
 
  @font-face {
      font-family: "Vanity-Bold";
-     src: url(../fonts/Vanity-Bold.ttf);
+     src: url(../../fonts/Vanity-Bold.ttf);
  }
 
  @font-face {
      font-family: "Vanity-BoldWide";
-     src: url(../fonts/Vanity-BoldWide.ttf);
+     src: url(../../fonts/Vanity-BoldWide.ttf);
  }
 
  @font-face {
      font-family: "Vanity-LightWide";
-     src: url(../fonts/Vanity-LightWide.ttf);
+     src: url(../../fonts/Vanity-LightWide.ttf);
  }
 
 
