@@ -8,6 +8,7 @@ const concat = require("gulp-concat");
 const newer = require("gulp-newer");
 const browserSync = require("browser-sync").create();
 
+/* Path */
 const imagesGlob = "assets/images/**";
 const photoSwipeImagesGlob = ["node_modules/photoswipe/dist/default-skin/default-skin.png", 
                               "node_modules/photoswipe/dist/default-skin/default-skin.svg", 
@@ -19,7 +20,9 @@ const vendorCssGlob = ["node_modules/photoswipe/dist/photoswipe.css",
 const customJsGlob = "js/**";
 const vendorJsGlob = ["node_modules/photoswipe/dist/photoswipe.min.js",
                       "node_modules/photoswipe/dist/photoswipe-ui-default.min.js"];
+/* /Path */
 
+/* Assets tasks */
 gulp.task("assets:images", function() {
    return gulp.src(imagesGlob, { since: gulp.lastRun("assets:images") })
               .pipe(debug({ title: "src" }))
@@ -49,7 +52,9 @@ gulp.task("assets:clean", function() {
 });
 
 gulp.task("assets", gulp.series("assets:images", "assets:rest", "assets:photoSwipe"));
+/* /Assets tasks */
 
+/* CSS tasks */
 gulp.task("css:custom", function() {
     return gulp.src(customCssGlob)
                .pipe(debug({ title: "src" }))
@@ -71,7 +76,9 @@ gulp.task("css:clean", function() {
 });
 
 gulp.task("css", gulp.series("css:clean", gulp.parallel("css:custom", "css:vendor")));
+/* CSS tasks */
 
+/* JS tasks */
 gulp.task("js:custom", function() {
     return gulp.src(customJsGlob)
                .pipe(debug({ title: "src" }))
@@ -93,7 +100,9 @@ gulp.task("js:clean", function() {
 });
 
 gulp.task("js", gulp.series("js:clean", gulp.parallel("js:custom", "js:vendor")));
+/* JS tasks */
 
+/* Common tasks */
 gulp.task("clean", gulp.series("assets:clean", "css:clean", "js:clean"));
 
 gulp.task("watch", function() {
@@ -111,3 +120,4 @@ gulp.task("serve", function() {
 });
 
 gulp.task("dev", gulp.series("assets", "css", "js", gulp.parallel("watch", "serve")));
+/* /Common tasks */
