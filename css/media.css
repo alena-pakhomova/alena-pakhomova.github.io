@@ -152,6 +152,11 @@
     height: 214px;
   }
     
+   .name_page .name_page__title {
+        font-size: 78px;
+        line-height: 71px;
+    }
+    
 }
 
 
