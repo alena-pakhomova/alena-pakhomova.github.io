@@ -14,7 +14,8 @@ const photoSwipeImagesGlob = ["node_modules/photoswipe/dist/default-skin/default
                               "node_modules/photoswipe/dist/default-skin/default-skin.svg", 
                               "node_modules/photoswipe/dist/default-skin/preloader.gif"];
 const assetsGlob = ["assets/**", "!"+imagesGlob];
-const customCssGlob = "css/**";
+const customCssGlob = ["css/style.css", 
+                       "css/media.css"];
 const vendorCssGlob = ["node_modules/photoswipe/dist/photoswipe.css", 
                        "node_modules/photoswipe/dist/default-skin/default-skin.css"];
 const customJsGlob = "js/**";

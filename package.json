@@ -4,7 +4,7 @@
   "description": "alena-pakhomova.github.io",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "browser-sync start --server --files \"css/*.css, *.html, pages/*.html, js/*.js\" --browsers \"Chrome\"",
+    "start": "./node_modules/.bin/gulp dev",
     "gulp": "./node_modules/.bin/gulp"
   },
   "repository": {

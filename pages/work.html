@@ -12,27 +12,38 @@
 </head>
 
 <body>
-    <div class="wrapper_work">
-        <header class="header_work">
-            <nav class="nav_work">
-                <a class="nav__work" href="#"></a>
-                <a class="nav__work nav__item--animate" href="pages/work.html">WORK</a>
-                <a class="nav__work nav_burger--animate" href="index.html"></a>
-                <a class="nav__work nav__item--animate" href="pages/about.html">ABOUT</a>
-                <a class="nav__work nav__item--animate" href="pages/contact.html">CONTACT</a>
-            </nav>
+    <div class="wrapper_work_ingress">
+        <header class="header_main">
+            <div class="header_menu">
+                <input class="nav_burger__checkbox" type="checkbox" id="burger">
+                <label class="nav_burger" for="burger">
+                    ME<span class="menu__burger"></span>NU
+                </label>
+                <div class="nav">
+                    <nav class="nav_menu">
+                        <a class="nav__item" href="#"></a>
+                        <a class="nav__item nav__item--animate" href="pages/allwork.html">WORK</a>
+                        <a class="nav__item" href="#"></a>
+                        <a class="nav__item nav__item--animate" href="pages/about.html">ABOUT</a>
+                        <a class="nav__item nav__item--animate" href="pages/contact.html">CONTACT</a>
+                    </nav>
+                </div>
+            </div>
         </header>
-        <section class="name_page scroll_blue_pink">
-            <h1>WORK</h1>
+         <section class="name_page scroll-wrap">
+            <h1 class="name_page__title"><span>Personal project</span><br>INGRESS TRACKER</h1>
+            <div class="scroll-wrap__pink-blue">
+                <a class="scroll-wrap__link" href="#">V</a>
+                <a class="scroll-wrap__link-r" href="#">V</a>
+            </div>
         </section>
-        <main class="main_work scroll_pink_blue">
-            <h4 class="main__h">Personal project</h4>
-            <h2>INGRESS TRACKER</h2>
+        <main class="main_work scroll-wrap">
+           
             <div class="wrap_ingress">
                 <div class="wrap_ingress_column_one">
                     <p>New UX/UI design and layout for a paid site that provides statistics on the game Ingress and its players</p>
                     <hr>
-                    <a href="https://ingress.news/#/" target="_blank">
+                    <a class="wrap_ingress_column_one__link" href="https://ingress.news/#/" target="_blank">
                         <span class="visit__site">
                         </span> visit website</a>
                     <p>Client: private person</p>
@@ -51,8 +62,14 @@
                     <img src="dist/assets/images/ingress-tracker/new-version/Web 1366 – 28.png">
                 </div>
             </div>
+            
+            <div class="scroll-wrap__pink-blue scroll-wrap__blue-pink_color">
+            <a href="#" class="scroll-wrap__link scroll-wrap_color">V</a>
+            <a href="#" class="scroll-wrap__link-r scroll-wrap_color-r">V</a>   
+            </div>
+            
         </main>
-        <section class="work_old_site scroll_blue_pink--end">
+        <section class="work_old_site scroll-wrap">
             <h4 class="main__h">For comparison...</h4>
             <h2>THE OLD VERSION <br>OF SITE</h2>
             <hr>
@@ -112,6 +129,11 @@
                     <img class="old_site__img" src="dist/assets/images/ingress-tracker/old-version/18-small.png">
                 </a>
             </div>
+            
+            <div class="scroll-wrap__pink-blue">
+            <a class="scroll-wrap__link-r scroll-wrap_color-r" href="#">V</a>   
+            </div>
+            
         </section>
     </div>
 
