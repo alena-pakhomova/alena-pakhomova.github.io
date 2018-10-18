@@ -917,6 +917,23 @@ transition: width 0.5s ease-in-out, opacity 0.3s ease-in-out;
 
 }
 
+@media all and (max-width:450px) {
+
+    .project-card {
+    max-width: 346px;
+    height: 292px;
+    }
+    
+.project-card__view {
+   
+    width: 346px;
+    height: 214px;
+  }
+    
+}
+
+
+
 /*-------------------------end work-------------------------*/
 
 /*-------------------------start about-------------------------*/
