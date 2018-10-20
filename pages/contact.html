@@ -21,14 +21,14 @@
                 <a class="nav__work nav__item--animate" href="pages/contact.html">CONTACT</a>
             </nav>
         </header>
-        <section class="name_page scroll-wrap">
+        <section id="page-name-section" class="name_page scroll-wrap">
             <h1>CONTACT</h1>
              <div class="scroll-wrap__pink-blue">
-            <a class="scroll-wrap__link" href="#">V</a>
-            <a class="scroll-wrap__link-r" href="#">V</a>   
+            <a class="scroll-wrap__link" data-navigate-to-id="main-contact-section">V</a>
+            <a class="scroll-wrap__link-r" data-navigate-to-id="page-name-section">V</a>   
             </div>
         </section>
-        <main class="main_contact scroll-wrap scroll_end_cut">
+        <main id="main-contact-section" class="main_contact scroll-wrap scroll_end_cut">
             <p>The new, interesting and unexpected is always just round the corner,<br> so please contact me, using my email
                 address or just call me.</p>
             <p>I am looking forward to hearing from you.</p>
@@ -37,10 +37,18 @@
             <p class="p__weight"><img class="main_contact__img" src="dist/assets/icons/black-back-closed-envelope-shape.svg">tsykunova.alena@yandex.ru</p>
             
              <div class="scroll-wrap__pink-blue scroll-wrap__blue-pink_color">
-            <a href="#" class="scroll-wrap__link-r">V</a>   
+            <a class="scroll-wrap__link-r" data-navigate-to-id="page-name-section">V</a>   
             </div>
         </main>
     </div>
+
+    <!-- Scripts -->
+    <script>
+        window.appPage = "contact";
+    </script>
+    <script src="dist/js/app.js"></script>
+    <script src="dist/js/vendor.js"></script>
+
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
         (function (d, w, c) {
@@ -70,6 +78,7 @@
     </script>
     <noscript><div><img src="https://mc.yandex.ru/watch/50357263" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
+    <!-- /Scripts -->
 </body>
 
 </html>

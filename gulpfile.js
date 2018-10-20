@@ -20,7 +20,9 @@ const vendorCssGlob = ["node_modules/photoswipe/dist/photoswipe.css",
                        "node_modules/photoswipe/dist/default-skin/default-skin.css"];
 const customJsGlob = "js/**";
 const vendorJsGlob = ["node_modules/photoswipe/dist/photoswipe.min.js",
-                      "node_modules/photoswipe/dist/photoswipe-ui-default.min.js"];
+                      "node_modules/photoswipe/dist/photoswipe-ui-default.min.js",
+                      "node_modules/gsap/src/minified/TweenLite.min.js",
+                      "node_modules/gsap/src/minified/plugins/ScrollToPlugin.min.js"];
 /* /Path */
 
 /* Assets tasks */

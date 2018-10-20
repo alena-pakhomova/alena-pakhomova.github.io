@@ -22,14 +22,14 @@
             </nav>
 
         </header>
-        <section class="name_page scroll-wrap">
+        <section id="page-name-section" class="name_page scroll-wrap">
             <h1>ABOUT</h1>
              <div class="scroll-wrap__pink-blue">
-            <a class="scroll-wrap__link" href="#">V</a>
-            <a class="scroll-wrap__link-r" href="#">V</a>   
+            <a class="scroll-wrap__link" data-navigate-to-id="main-section">V</a>
+            <a class="scroll-wrap__link-r" data-navigate-to-id="page-name-section">V</a>   
             </div>
         </section>
-        <main class="main_work scroll-wrap scroll_end_cut">
+        <main id="main-section" class="main_work scroll-wrap scroll_end_cut">
             <h4 class="main__h">Hello, my name is...</h4>
             <h2>ALENA PAKHOMOVA</h2>
             <div class="wrap_ingress">
@@ -59,11 +59,19 @@
                 </div>
             </div>
             <div class="scroll-wrap__pink-blue scroll-wrap__blue-pink_color">
-            <a href="#" class="scroll-wrap__link-r">V</a>   
+            <a class="scroll-wrap__link-r" data-navigate-to-id="page-name-section">V</a>   
             </div>
             
         </main>
     </div>
+
+    <!-- Scripts -->
+    <script>
+        window.appPage = "about";
+    </script>
+    <script src="dist/js/app.js"></script>
+    <script src="dist/js/vendor.js"></script>
+
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
         (function (d, w, c) {
@@ -93,6 +101,7 @@
     </script>
     <noscript><div><img src="https://mc.yandex.ru/watch/50357263" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
+    <!-- /Scripts -->
 </body>
 
 </html>
