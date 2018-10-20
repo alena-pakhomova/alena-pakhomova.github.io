@@ -30,14 +30,14 @@
                 </div>
             </div>
         </header>
-         <section class="name_page scroll-wrap">
+         <section id="page-name-section" class="name_page scroll-wrap">
             <h1 class="name_page__title"><span>Personal project</span><br>INGRESS TRACKER</h1>
             <div class="scroll-wrap__pink-blue">
-                <a class="scroll-wrap__link" href="#">V</a>
-                <a class="scroll-wrap__link-r" href="#">V</a>
+                <a class="scroll-wrap__link" data-navigate-to-id="main-work-section">V</a>
+                <a class="scroll-wrap__link-r" data-navigate-to-id="page-name-section">V</a>
             </div>
         </section>
-        <main class="main_work scroll-wrap">
+        <main id="main-work-section" class="main_work scroll-wrap">
            
             <div class="wrap_ingress">
                 <div class="wrap_ingress_column_one">
@@ -64,12 +64,12 @@
             </div>
             
             <div class="scroll-wrap__pink-blue scroll-wrap__blue-pink_color">
-            <a href="#" class="scroll-wrap__link scroll-wrap_color">V</a>
-            <a href="#" class="scroll-wrap__link-r scroll-wrap_color-r">V</a>   
+            <a class="scroll-wrap__link scroll-wrap_color" data-navigate-to-id="old-work-section">V</a>
+            <a class="scroll-wrap__link-r scroll-wrap_color-r" data-navigate-to-id="main-work-section">V</a>   
             </div>
             
         </main>
-        <section class="work_old_site scroll-wrap">
+        <section id="old-work-section" class="work_old_site scroll-wrap">
             <h4 class="main__h">For comparison...</h4>
             <h2>THE OLD VERSION <br>OF SITE</h2>
             <hr>
@@ -131,7 +131,7 @@
             </div>
             
             <div class="scroll-wrap__pink-blue">
-            <a class="scroll-wrap__link-r scroll-wrap_color-r" href="#">V</a>   
+            <a class="scroll-wrap__link-r scroll-wrap_color-r" data-navigate-to-id="main-work-section">V</a>   
             </div>
             
         </section>
@@ -192,6 +192,10 @@
     </div>
     <!-- /Photoswipe gallery -->
 
+    <!-- Scripts -->
+    <script>
+        window.appPage = "work";
+    </script>
     <script src="dist/js/app.js"></script>
     <script src="dist/js/vendor.js"></script>
 
@@ -224,6 +228,7 @@
     </script>
     <noscript><div><img src="https://mc.yandex.ru/watch/50357263" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
+    <!-- /Scripts -->
 </body>
 
 </html>

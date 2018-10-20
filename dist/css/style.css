@@ -386,6 +386,7 @@ transition: width 0.5s ease-in-out, opacity 0.3s ease-in-out;
     display: block;
     color: #0a0235;
     text-decoration: none;
+    cursor: pointer;
 }
 .scroll-wrap__link-r {
     transform: rotateX(180deg);
@@ -393,6 +394,7 @@ transition: width 0.5s ease-in-out, opacity 0.3s ease-in-out;
     display: block;
     margin-top: -8px;
     text-decoration: none;
+    cursor: pointer;
    }
 
 .scroll-wrap__blue-pink_color {
@@ -405,6 +407,7 @@ transition: width 0.5s ease-in-out, opacity 0.3s ease-in-out;
     color: #0a0235;
 }
 
+.scroll-wrap__pink-blue .scroll-wrap__link:hover,
 .scroll-wrap__pink-blue .scroll-wrap__link-r:hover {
     text-decoration: none;
 }
