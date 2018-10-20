@@ -1,5 +1,3 @@
-"use strict";
-
 (function WorkPageModule(pageName) {
 
     const moduleName = "work";
@@ -49,7 +47,7 @@
     function init() {
         pswpElement = document.querySelectorAll('.pswp')[0];
         photoswipeImages = createPhotoswipeImagesArr();
-        
+
         new NavigationScrollingBehaviour();
     }
 

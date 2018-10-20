@@ -6,6 +6,7 @@ const del = require("del");
 const imagemin = require("gulp-imagemin");
 const concat = require("gulp-concat");
 const newer = require("gulp-newer");
+const wrapper = require("gulp-wrapper");
 const browserSync = require("browser-sync").create();
 
 /* Path */
@@ -87,6 +88,10 @@ gulp.task("js:custom", function() {
                .pipe(debug({ title: "src" }))
                .pipe(concat("app.js"))
                .pipe(debug({ title: "concat" }))
+               .pipe(wrapper({
+                   header: "\"use strict\"; \n"
+               }))
+               .pipe(debug({ title: "wrapper" }))
                .pipe(gulp.dest("dist/js"));
 });
 

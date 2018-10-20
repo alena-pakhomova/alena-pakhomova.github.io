@@ -1,5 +1,4 @@
-"use strict";
-
+"use strict"; 
 (function AboutPageModule(pageName) {
 
     const moduleName = "about";
@@ -13,8 +12,6 @@
     }
 
 })(window.appPage);
-"use strict";
-
 (function AllworkPageModule(pageName) {
 
     const moduleName = "allwork";
@@ -28,8 +25,6 @@
     }
 
 })(window.appPage);
-"use strict";
-
 (function ContactPageModule(pageName) {
 
     const moduleName = "contact";
@@ -43,8 +38,6 @@
     }
 
 })(window.appPage);
-"use strict";
-
 (function WorkPageModule(pageName) {
 
     const moduleName = "work";
@@ -94,7 +87,7 @@
     function init() {
         pswpElement = document.querySelectorAll('.pswp')[0];
         photoswipeImages = createPhotoswipeImagesArr();
-        
+
         new NavigationScrollingBehaviour();
     }
 
@@ -103,8 +96,6 @@
     }
 
 })(window.appPage);
-"use strict";
-
 function NavigationScrollingBehaviour() {
 
     function init() {

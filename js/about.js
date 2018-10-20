@@ -1,5 +1,3 @@
-"use strict";
-
 (function AboutPageModule(pageName) {
 
     const moduleName = "about";

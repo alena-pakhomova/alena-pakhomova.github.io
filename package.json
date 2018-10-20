@@ -24,7 +24,8 @@
     "gulp-concat": "^2.6.1",
     "gulp-debug": "^4.0.0",
     "gulp-imagemin": "^4.1.0",
-    "gulp-newer": "^1.4.0"
+    "gulp-newer": "^1.4.0",
+    "gulp-wrapper": "^1.0.0"
   },
   "dependencies": {
     "gsap": "^2.0.2",

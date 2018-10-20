@@ -1,5 +1,3 @@
-"use strict";
-
 function NavigationScrollingBehaviour() {
 
     function init() {

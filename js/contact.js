@@ -1,5 +1,3 @@
-"use strict";
-
 (function ContactPageModule(pageName) {
 
     const moduleName = "contact";
