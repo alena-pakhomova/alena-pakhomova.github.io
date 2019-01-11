@@ -32,7 +32,9 @@
      display: grid;
      grid-template-columns: 1fr repeat(12, minmax(auto, 122px)) 1fr;
      grid-column-gap: 16px;
-     grid-template-rows: repeat(2, auto);
+     grid-template-rows: auto 1fr;
+     width: 100%;
+     min-height: 100vh;
  }
 
  .header_main {
@@ -54,7 +56,7 @@
      display: grid;
      grid-template-columns: 1fr repeat(12, minmax(auto, 122px)) 1fr;
      grid-column-gap: 16px;
-     grid-template-rows: auto minmax(750px, auto) repeat(3, auto);
+     grid-template-rows: auto 1fr repeat(3, auto);
  }
 
 .wrapper_work_ingress {
@@ -353,7 +355,8 @@ transition: width 0.5s ease-in-out, opacity 0.3s ease-in-out;
      flex-direction: row;
      justify-content: center;
      align-items: center;
-
+width: 100%;
+     min-height: calc(100vh - 120px);
  }
 
 
@@ -479,6 +482,7 @@ transition: width 0.5s ease-in-out, opacity 0.3s ease-in-out;
 
  }
 
+
  .wrap_ingress_column_one__link {
      color: #0a0235;
      text-decoration: none;
@@ -487,6 +491,16 @@ transition: width 0.5s ease-in-out, opacity 0.3s ease-in-out;
      position: relative;
      margin-left: 28px;
  }
+.wrap_ingress_column_one__link_no
+{
+     text-decoration: line-through;
+}
+
+.main_work .wrap_ingress_column_one__link_no:hover{
+     text-decoration: line-through;
+    cursor: auto;
+}
+
 
  .main_work hr,
 .main_contact hr {
