@@ -389,6 +389,7 @@ width: 100%;
     display: block;
     color: #0a0235;
     text-decoration: none;
+    cursor: pointer;
 }
 .scroll-wrap__link-r {
     transform: rotateX(180deg);
@@ -396,6 +397,7 @@ width: 100%;
     display: block;
     margin-top: -8px;
     text-decoration: none;
+    cursor: pointer;
    }
 
 .scroll-wrap__blue-pink_color {
@@ -408,6 +410,7 @@ width: 100%;
     color: #0a0235;
 }
 
+.scroll-wrap__pink-blue .scroll-wrap__link:hover,
 .scroll-wrap__pink-blue .scroll-wrap__link-r:hover {
     text-decoration: none;
 }

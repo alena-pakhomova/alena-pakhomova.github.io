@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <base href="../">
     <link rel="stylesheet" href="dist/css/style.css">
-    <link rel="stylesheet" href="dist/css/vendor.css">
     <link rel="shortcut icon" href="dist/assets/icons/logo title.png" type="image/x-icon">
     <title>Work - Pakhomova AV</title>
 </head>
@@ -22,14 +21,14 @@
                 <a class="nav__work nav__item--animate" href="pages/contact.html">CONTACT</a>
             </nav>
         </header>
-        <section class="name_page scroll-wrap">
+        <section id="page-name-section" class="name_page scroll-wrap">
             <h1>WORK</h1>
             <div class="scroll-wrap__pink-blue">
-                <a class="scroll-wrap__link" href="#">V</a>
-                <a class="scroll-wrap__link-r" href="#">V</a>
+                <a class="scroll-wrap__link" data-navigate-to-id="main-section">V</a>
+                <a class="scroll-wrap__link-r" data-navigate-to-id="page-name-section">V</a>
             </div>
         </section>
-        <main class="main-allwork scroll-wrap scroll_end_cut">
+        <main id="main-section" class="main-allwork scroll-wrap scroll_end_cut">
             <div class="project-wrap">
 
                 <div class="project-card project-card_mar project-card_anim_black">
@@ -50,10 +49,48 @@
 
             </div>
             <div class="scroll-wrap__pink-blue scroll-wrap__blue-pink_color">
-                <a href="#" class="scroll-wrap__link-r">V</a>
+                <a class="scroll-wrap__link-r" data-navigate-to-id="page-name-section">V</a>
             </div>
         </main>
     </div>
+
+    <!-- Scripts -->
+    <script>
+        window.appPage = "allwork";
+    </script>
+    <script src="dist/js/app.js"></script>
+    <script src="dist/js/vendor.js"></script>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+            (function (d, w, c) {
+                (w[c] = w[c] || []).push(function () {
+                    try {
+                        w.yaCounter50357263 = new Ya.Metrika2({
+                            id: 50357263,
+                            clickmap: true,
+                            trackLinks: true,
+                            accurateTrackBounce: true,
+                            webvisor: true
+                        });
+                    } catch (e) { }
+                });
+    
+                var n = d.getElementsByTagName("script")[0],
+                    s = d.createElement("script"),
+                    f = function () { n.parentNode.insertBefore(s, n); };
+                s.type = "text/javascript";
+                s.async = true;
+                s.src = "https://mc.yandex.ru/metrika/tag.js";
+    
+                if (w.opera == "[object Opera]") {
+                    d.addEventListener("DOMContentLoaded", f, false);
+                } else { f(); }
+            })(document, window, "yandex_metrika_callbacks2");
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/50357263" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+    <!-- /Scripts -->
 </body>
 
 </html>

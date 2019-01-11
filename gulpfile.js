@@ -6,6 +6,7 @@ const del = require("del");
 const imagemin = require("gulp-imagemin");
 const concat = require("gulp-concat");
 const newer = require("gulp-newer");
+const wrapper = require("gulp-wrapper");
 const browserSync = require("browser-sync").create();
 
 /* Path */
@@ -20,7 +21,9 @@ const vendorCssGlob = ["node_modules/photoswipe/dist/photoswipe.css",
                        "node_modules/photoswipe/dist/default-skin/default-skin.css"];
 const customJsGlob = "js/**";
 const vendorJsGlob = ["node_modules/photoswipe/dist/photoswipe.min.js",
-                      "node_modules/photoswipe/dist/photoswipe-ui-default.min.js"];
+                      "node_modules/photoswipe/dist/photoswipe-ui-default.min.js",
+                      "node_modules/gsap/src/minified/TweenLite.min.js",
+                      "node_modules/gsap/src/minified/plugins/ScrollToPlugin.min.js"];
 /* /Path */
 
 /* Assets tasks */
@@ -85,6 +88,10 @@ gulp.task("js:custom", function() {
                .pipe(debug({ title: "src" }))
                .pipe(concat("app.js"))
                .pipe(debug({ title: "concat" }))
+               .pipe(wrapper({
+                   header: "\"use strict\"; \n"
+               }))
+               .pipe(debug({ title: "wrapper" }))
                .pipe(gulp.dest("dist/js"));
 });
 

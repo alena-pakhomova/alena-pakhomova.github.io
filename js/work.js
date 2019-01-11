@@ -1,6 +1,9 @@
-"use strict";
+(function WorkPageModule(pageName) {
 
-(function WorkPageModule() {
+    const moduleName = "work";
+
+    let pswpElement = null;
+    let photoswipeImages = null;
 
     function onPhotoswipeItemClick(e) {
         e = e || window.event;
@@ -41,7 +44,15 @@
         return returnValue;
     }
 
-    const pswpElement = document.querySelectorAll('.pswp')[0];
-    const photoswipeImages = createPhotoswipeImagesArr();
+    function init() {
+        pswpElement = document.querySelectorAll('.pswp')[0];
+        photoswipeImages = createPhotoswipeImagesArr();
 
-})();
+        new NavigationScrollingBehaviour();
+    }
+
+    if (pageName === moduleName) {
+        init();
+    }
+
+})(window.appPage);

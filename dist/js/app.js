@@ -1,6 +1,49 @@
-"use strict";
+"use strict"; 
+(function AboutPageModule(pageName) {
 
-(function WorkPageModule() {
+    const moduleName = "about";
+
+    function init() {
+        new NavigationScrollingBehaviour();
+    }
+
+    if (pageName === moduleName) {
+        init();
+    }
+
+})(window.appPage);
+(function AllworkPageModule(pageName) {
+
+    const moduleName = "allwork";
+
+    function init() {
+        new NavigationScrollingBehaviour();
+    }
+
+    if (pageName === moduleName) {
+        init();
+    }
+
+})(window.appPage);
+(function ContactPageModule(pageName) {
+
+    const moduleName = "contact";
+
+    function init() {
+        new NavigationScrollingBehaviour();
+    }
+
+    if (pageName === moduleName) {
+        init();
+    }
+
+})(window.appPage);
+(function WorkPageModule(pageName) {
+
+    const moduleName = "work";
+
+    let pswpElement = null;
+    let photoswipeImages = null;
 
     function onPhotoswipeItemClick(e) {
         e = e || window.event;
@@ -41,7 +84,37 @@
         return returnValue;
     }
 
-    const pswpElement = document.querySelectorAll('.pswp')[0];
-    const photoswipeImages = createPhotoswipeImagesArr();
+    function init() {
+        pswpElement = document.querySelectorAll('.pswp')[0];
+        photoswipeImages = createPhotoswipeImagesArr();
 
-})();
+        new NavigationScrollingBehaviour();
+    }
+
+    if (pageName === moduleName) {
+        init();
+    }
+
+})(window.appPage);
+function NavigationScrollingBehaviour() {
+
+    function init() {
+        const allNavigationLinks = document.querySelectorAll(".scroll-wrap__link, .scroll-wrap__link-r");
+
+        for (let i = 0; i < allNavigationLinks.length; i++) {
+            const navigationLink = allNavigationLinks[i];
+            const navigateTo = navigationLink.getAttribute("data-navigate-to-id");
+            if (navigateTo) {
+                navigationLink.onclick = function() {
+                    scrollTo(navigateTo);
+                };
+            }
+        }
+    }
+
+    function scrollTo(elementId) {
+        TweenLite.to(window, 1.3, { scrollTo: "#" + elementId, ease: Power2.easeOut });
+    }
+
+    init();
+}
